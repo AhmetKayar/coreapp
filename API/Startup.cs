@@ -40,6 +40,8 @@ namespace API
 
             app.UseAuthorization();
 
+            app.UseHttpsRedirection();
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
