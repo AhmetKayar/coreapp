@@ -1,13 +1,16 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class ValuesController : Controller
     {
-        // GET
-        public IActionResult Index()
+        [HttpGet]
+        public string Index()
         {
-            return View();
+            return "Hello Word";
         }
     }
 }
