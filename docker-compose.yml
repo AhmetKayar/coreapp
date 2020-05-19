@@ -2,6 +2,9 @@ version: '3'
 services:
   coreapp:
     image: coreapp:v1
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
     ports:
       - "4000:80"
     networks: 
